@@ -1,8 +1,5 @@
-let num = Number(prompt("Entered"));
+let num = Number(prompt("Enter a number from 0 to 7:"));
 console.log(num);
-if (Number.isNaN(num) || !Number.isInteger(num) || num < 0 || num > 7) {
-  console.log("Entered wrong data");
-} else {
   switch (num) {
     case 0:
       console.log("---");
@@ -28,6 +25,5 @@ if (Number.isNaN(num) || !Number.isInteger(num) || num < 0 || num > 7) {
     case 7:
       console.log("rwx");
       break;
-    default:
+    default: console.log("Entered wrong data");
   }
-}
